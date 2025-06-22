@@ -1,15 +1,29 @@
+body{
+    background-color: rgb(168, 102, 115);
+}
 .colculator {
-    height: 50vh;
-    width: 35vw;
+    height: 80vh;
+    width: 40vw !important;
     display: grid;
     border-radius: 5%;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(4, 1fr);
     justify-self: center;
 }
+ button {
+      margin-left:3px !important;
+    width: 7vw;
+    height: 5vh;
+ }
+ input{
+    margin-left:4px !important;
+    width: 35vw;
+ }
 @media (max-width:780px) {
     .colculator {
         background: rgb(222, 226, 228);
+        height: 50vh;
+        width: 100vw !important;
     }
     input {
         font-weight: bold;
@@ -19,17 +33,20 @@
         margin: 2px;
         grid-column-start: 1;
         grid-column-end: 5;
+        width: 95vw;
     }
     button {
         font-weight: bold;
+        height: 8vh;
         font-size: large;
         text-align: center;
         margin: 2px;
         border: 2px solid rgb(245, 238, 238);
         border-radius: 25px;
-        background-color: #d5dbdb;
+        width: 23vw;
     }
-}.cancel {
+}
+.cancel {
     color: red;
 }
 .operator {
